@@ -1,0 +1,42 @@
+<section class="property-binding">
+    <!--<article>
+        <h3> Interpolation / Interpolação</h3>
+        <p> String renderizada com interpolacao: {{ url }}</p>
+        <p> Calculo Matematico com interpolação: {{1+1}}
+            <p>Boleana {{CursoTop && getCurtirCurso() }}</p>
+            <img src={{urlImagen}} alt="">
+            <img [src]=urlImagen alt="">
+    </article>
+    -->
+
+    <!--<article>
+        <h3> Class BootStrap Binding </h3>
+        <div>
+            <select #classe (change)="0">
+            <option value="alert-success"> Sucesso</option>
+            <option value="alert-danger"> Erro</option>
+          </select>
+        </div>
+        <br>
+        <br>
+        <div class="alert" role="" [class.alert-success]="classe.value =='alert-success'">Sucesso</div>
+        <div class="alert" role="" [class.alert-danger]="classe.value =='alert-danger'">Erro</div>
+        <div class="alert alert-danger" role=" " [style.display]="classe.value=='alert-danger' ? 'block': 'none'">Essa mensagem vai aparecer em caso de erro vamos ver como fazer isso aqui no angular 2 eeee isso e muito bom mesmo kkkk oque que to falando e vou digitando sem para porque isso e muito legal muito mesmo qro isso para sempre e legal e facil para
+            mim nao que seja facil e que tenho facilidade com tecnologia da informação</div>
+    </article>-->
+
+    <article>
+        <h3>Ola Essa aula e a de numero 11 sobre Event binding</h3>
+        <div>
+            <button class="btn btn-primary" (click)="Click()">Jessica Clicka Aqui </button>
+            <input type="text" (blur)="SalvarValor(CampoInput.value)" (keyup)="KeyUP($event)" (keyup.enter)="SalvarValor($event.target.value)" #CampoInput>
+            <br>
+            <div>{{ValorAtual}}</div>
+            <br>
+            <div> Teste : {{ValorSalvo}}</div>
+            <br>
+            <span (mouseout)="onMouseOut()" (mouseover)="onMouseOut()" [class.highligth]="IsMouseOver">Esse Texto aqui passa encima dele com o mouse</span>
+        </div>
+    </article>
+
+</section>
