@@ -25,7 +25,7 @@
             mim nao que seja facil e que tenho facilidade com tecnologia da informação</div>
     </article>-->
 
-    <article>
+    <!--<article>
         <h3>Ola Essa aula e a de numero 11 sobre Event binding</h3>
         <div>
             <button class="btn btn-primary" (click)="Click()">Jessica Clicka Aqui </button>
@@ -37,6 +37,19 @@
             <br>
             <span (mouseout)="onMouseOut()" (mouseover)="onMouseOut()" [class.highligth]="IsMouseOver">Esse Texto aqui passa encima dele com o mouse</span>
         </div>
-    </article>
+    </article>-->
 
+
+
+    <article>
+        <h3>Two-data-Binding</h3>
+        <div>
+            <!--<input type="text" [value]="nome" (input)="nome=input.value" #input>
+            <input type="text" [ngModel]="nome" (ngModelChange)="nome=$event">-->
+            <input type="text" [(ngModel)]="pesssoa.nome">
+            <input type="text" [(ngModel)]="pessoa.idade">
+
+            <p> Seu nome é {{ pessoa.nome }} possue {{ pessoa.idade }} de idade</p>
+        </div>
+    </article>
 </section>
