@@ -1,5 +1,5 @@
-<section class="property-binding">
-    <!--<article>
+<!--<section class="property-binding">-->
+<!--<article>
         <h3> Interpolation / Interpolação</h3>
         <p> String renderizada com interpolacao: {{ url }}</p>
         <p> Calculo Matematico com interpolação: {{1+1}}
@@ -9,7 +9,7 @@
     </article>
     -->
 
-    <!--<article>
+<!--<article>
         <h3> Class BootStrap Binding </h3>
         <div>
             <select #classe (change)="0">
@@ -25,7 +25,7 @@
             mim nao que seja facil e que tenho facilidade com tecnologia da informação</div>
     </article>-->
 
-    <!--<article>
+<!--<article>
         <h3>Ola Essa aula e a de numero 11 sobre Event binding</h3>
         <div>
             <button class="btn btn-primary" (click)="Click()">Jessica Clicka Aqui </button>
@@ -38,18 +38,24 @@
             <span (mouseout)="onMouseOut()" (mouseover)="onMouseOut()" [class.highligth]="IsMouseOver">Esse Texto aqui passa encima dele com o mouse</span>
         </div>
     </article>-->
+<!--</section>-->
 
 
+<!--<article>
+    <h3>Two-data-Binding</h3>
+    <div>
+        <input type="text" [value]="nome" (input)="nome=input.value" #input>
+        <input type="text" [ngModel]="nome" (ngModelChange)="nome=$event">
+        <input type="text" [(ngModel)]="pessoa.nome">
+        <input type="text" [(ngModel)]="pessoa.idade">
+        <p> Seu nome é {{ pessoa.nome }} possue {{ pessoa.idade }} de idade</p>
+    </div>
+</article>-->
+<article>
+    <h3> Input/Output Property</h3>
+    <app-input-property [nomeCurso]="NomeDoCurso">
 
-    <article>
-        <h3>Two-data-Binding</h3>
-        <div>
-            <!--<input type="text" [value]="nome" (input)="nome=input.value" #input>
-            <input type="text" [ngModel]="nome" (ngModelChange)="nome=$event">-->
-            <input type="text" [(ngModel)]="pessoa.nome">
-            <input type="text" [(ngModel)]="pessoa.idade">
+    </app-input-property>
 
-            <p> Seu nome é {{ pessoa.nome }} possue {{ pessoa.idade }} de idade</p>
-        </div>
-    </article>
-</section>
+    <app-output-property [valor]="valorInicial" (modouValor)="onModouValor($event)"></app-output-property>
+</article>

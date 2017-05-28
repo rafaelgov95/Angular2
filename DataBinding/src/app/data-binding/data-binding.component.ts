@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class DataBindingComponent implements OnInit {
   url:string = "Minha Casa Minha Vida Um dia Qm sabe";
   CursoTop:boolean= true;
+  NomeDoCurso="Curso do Angular2"
   urlImagen = "https://bbvaopen4u.com/sites/default/files/img/embed/new/bbva-open4u-librerias-javascript-codigo-sin-comprimir.png"
   ValorAtual:string;
   ValorSalvo:string;
   IsMouseOver:boolean;
-  // nome:string= "abc";
-  
-  pessoa = {nome:'olq muneo  ',idade:20 }
+  valorInicial:number=15;  
+  pessoa = {nome:'',idade:20 }
   
   getData(){
     return 1;
@@ -37,8 +37,11 @@ export class DataBindingComponent implements OnInit {
   onMouseOut(){
     this.IsMouseOver= !this.IsMouseOver;
   }
+  onModouValor(evento) {
+    console.log(evento)
+  }
   constructor() {
- console.log(this.pessoa); }
+  }
 
   ngOnInit() {
   }
