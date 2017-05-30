@@ -1,2 +1,2 @@
 # Angular2
-Estuda do Framework Angular2 Loiane 
+Estuda do Framework Angular2 Loiane .
